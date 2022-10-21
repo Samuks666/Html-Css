@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento Picture</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Aumente de diminua o tamanho do navegador</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="Imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/media.png" type="image/png">
+        <img src="Imagens/grande.png" alt="Imagem Flexível">
+        <h1>Adicionar Audios</h1>
+        <p>Reproduzir audios usando html</p>
+        <audio src="Media/Sunshine.mp3" controls></audio>
+        <!--Formatos MP3, Wav, ogg-->
+        <audio preload="metadata" controls loop>
+            <source src="Media/Sunshine.mp3" type="audio/mpeg">
+            <source src="Media/Sunshine.ogg" type="audio/ogg" controls>
+            <p>Infelizmente não foi possível carregar o audio</p>
+        </audio>
+        <h2>Videos Hospedado Localmente</h2>
+        <video src="Media/production ID 4713259.mp4" width="350" controls ></video> <!--Maneira Simples-->
+
+        <video poster="" width="350" controls loop>
+            <source src="Media/production ID 4713259.mp4" type="video/mp4">
+            <source src="" type="video/ogv">
+        </video>
+        <h1>Inserindo videos do Youtube</h1>
+        <iframe width="350" height="240" src="https://www.youtube.com/embed/2iaPuUFIyMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
+    </picture>
+</body>
+</html>
